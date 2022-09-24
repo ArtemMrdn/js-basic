@@ -1,0 +1,13 @@
+.form-group {
+    margin: 4px;
+}
+
+.form-group label {
+    width: 75px;
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    display: none;
+}

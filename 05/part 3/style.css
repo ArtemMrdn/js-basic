@@ -1,0 +1,30 @@
+.message {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: orange;
+    font-weight: bold;
+    margin: 8px;
+    padding: 15px;
+}
+
+.read {
+    background-color: white;
+    color: gray;
+}
+
+.message1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: orange;
+    font-weight: bold;
+    margin: 8px;
+    padding: 15px;
+}
+
+.read1 {
+    background-color: white;
+    color: gray;
+}
+ 

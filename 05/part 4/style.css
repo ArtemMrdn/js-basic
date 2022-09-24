@@ -1,0 +1,10 @@
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+div::selection {
+    background-color: yellow;
+}

@@ -1,0 +1,21 @@
+.form-group {
+    margin: 12px 4px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group label.inline {
+    display: inline-block;
+}
+
+/* :valid - псевдокласс находит элементы, которые прошли валидацию */
+input:valid {
+    border: 1px solid green;
+}
+
+/* :invalid - псевдокласс находит элементы, которые не прошли валидацию */
+input:invalid {
+    border: 1px solid red;
+}

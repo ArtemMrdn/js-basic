@@ -1,0 +1,46 @@
+function setCookie(name, value) {
+  let encodedValue = encodeURIComponent(value);
+  document.cookie = `${name}=${encodedValue}`;
+}
+
+function getCookie(name) {
+  let cookie = document.cookie; // a=10; b=20; c=30
+  let pos = cookie.indexOf(name + "=");
+
+  // Если cookie с указанным именем найден, извлечь его значения.
+  if (pos != -1) {
+    let start = pos + name.length + 1;
+    let end = cookie.indexOf(";", start);
+
+    if (end == -1) {
+      end = cookie.length;
+    }
+
+    // substring - вырезать значения из строки по индексам указанным в параметрах
+    let value = cookie.substring(start, end);
+
+    return decodeURIComponent(value);
+  }
+}
+
+function deleteCookie(name) {
+  document.cookie = `${name}=;max-age=0`; // для удаления cookie устанавливается max-age равный 0
+}
+
+let readBtn = document.querySelector("#readButton");
+let writeBtn = document.querySelector("#writeButton");
+let deleteBtn = document.querySelector("#deleteButton");
+
+writeBtn.addEventListener("click", function () {
+  setCookie("myCookie", "Тестовое значение = 123!");
+});
+
+readBtn.addEventListener("click", function () {
+  let value = getCookie("myCookie");
+  if (value) alert(value);
+  else alert("Значенеи не найдено");
+});
+
+deleteBtn.addEventListener("click", function () {
+  deleteCookie("myCookie");
+});

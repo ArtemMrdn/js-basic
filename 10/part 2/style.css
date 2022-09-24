@@ -1,0 +1,8 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car-info {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+}

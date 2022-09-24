@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div {
+    background-color: lightblue;
+    margin: 8px;
+    padding: 8px;
+}
+p {
+    background-color: coral;
+    margin: 8px;
+    padding: 8px;
+}

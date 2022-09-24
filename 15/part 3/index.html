@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="loginForm" action="http://test.com/login.php" method="POST">
+      <div class="form-grop">
+        <label>Логин</label>
+        <input type="text" name="loginInput" />
+      </div>
+      <div class="form-grop">
+        <label>Пароль</label>
+        <input type="password" name="passwordInput" />
+      </div>
+      <div class="form-grop">
+        <input type="submit" value = 'Вход'>
+      </div>
+    </form>
+    <a href="#" id="checkFormButton">Проверить форму</a> <br />
+    <a href="#" id="checkValuesButton">Проверить значения элементов</a>
+    <script src="app.js"></script>
+  </body>
+</html>
